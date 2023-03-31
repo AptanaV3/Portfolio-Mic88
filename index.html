@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/public/css/app.css">
     <link rel="stylesheet" href="assets/public/css/boxicons-2.0.7/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/public/css/app.css">
 </head>
 
 <body class="" id="body">
     <div class="container">
 
         <!-- ---------------- header ---------------- -->
-        <header class="header">
+        <header class="header" id="Home">
             <nav class="nav" id="navbar">
                 <a class="logo">
                     <span>M</span><span>I</span><span>C</span>
@@ -27,20 +28,20 @@
                     <div class="close_menu" onclick="showMenu()">
                         <div class="trai"></div>
                     </div>
-                    <li class="item menu_item-active">
-                        <a href="#">Home</a>
+                    <li class="item menu_item-active" onclick="closeMenu()">
+                        <a href="#Home">Home</a>
                     </li>
-                    <li class="item">
-                        <a href="#">About</a>
+                    <li class="item" onclick="closeMenu()">
+                        <a href="#About">About</a>
                     </li>
-                    <li class="item">
-                        <a href="#">Work</a>
+                    <li class="item" onclick="closeMenu()">
+                        <a href="#Work">Work</a>
                     </li>
-                    <li class="item">
-                        <a href="#">Skills</a>
+                    <li class="item" onclick="closeMenu()">
+                        <a href="#Skills">Skills</a>
                     </li>
-                    <li class="item">
-                        <a href="#">Contact</a>
+                    <li class="item" onclick="closeMenu()">
+                        <a href="#Contact">Contact</a>
                     </li>
                 </ul>
 
@@ -68,7 +69,8 @@
 
                 <div class="ct_elements">
                     <div class="avatar">
-                        <div class="shadow_box bonjour">
+                        <div class="shadow_box bonjour" data-aos="fade-up-left" data-aos-delay="800"
+                            data-aos-duration="800">
                             <div class="ct_">
                                 <img src="assets/public/images/modern-javascript-basics.png"
                                     alt="image de profil de Foko Guy Michel" srcset="">
@@ -79,28 +81,29 @@
                             </div>
                         </div>
 
-                        <div class="shadow_box competance">
+                        <div class="shadow_box competance" data-aos="zoom-in-left" data-aos-delay="1800"
+                            data-aos-duration="1600">
                             <div class="web_designer">web designer</div>
                             <div class="print_designer">print designer</div>
                             <div class="dev_full_stask">Full-stack Developper</div>
                         </div>
                         <img class="img_avatar" src="assets/public/images/avatars/man-5583034_1920.png"
-                            alt="photo de Foko Guy michel">
+                            alt="photo de Foko Guy michel" data-aos="zoom-out-left">
                         <img class="img_outils tablet-up" src="assets/public/images/power-ups.png"
-                            alt="image des outils de developement">
+                            alt="image des outils de developement" data-aos="fade-left" data-aos-delay="300">
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- ---------------- about ---------------- -->
-        <section class="about">
-            <div class="section-title">
+        <section class="about" id="About">
+            <div class="section-title" data-aos="fade-up">
                 Maitrise de <span class="color_title">Competences Varié</span> <br> pour un travaille de <span
                     class="color_title">Qualite</span>
             </div>
             <div class="sous-section competances">
-                <div class="ct_competance">
+                <div class="ct_competance" data-aos="fade-up-right" data-aos-delay="300">
                     <div class="ct_img">
                         <img src="assets/public/images/preview1.jpg" alt="visuel projet print design" srcset="">
                     </div>
@@ -113,7 +116,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="ct_competance">
+                <div class="ct_competance" data-aos="fade-up" data-aos-delay="600">
                     <div class="ct_img">
                         <img src="assets/public/images/preview2.jpg" alt="visuel projet web design" srcset="">
                     </div>
@@ -126,7 +129,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="ct_competance">
+                <div class="ct_competance" data-aos="fade-up-left" data-aos-delay="900" data-aos-duration="500">
                     <div class="ct_img">
                         <img src="assets/public/images/preview3.jpg" alt="visuel projet Full-stack developper"
                             srcset="">
@@ -143,10 +146,10 @@
                 </div>
             </div>
             <div class="sous-section">
-                <div class="sous-section-title">Activitées</div>
+                <div class="sous-section-title" data-aos="fade-right">Activitées</div>
                 <div class="activitees">
-                    <div class="ct_slide_activitees">
-                        <div class="box_Activite">
+                    <div class="ct_slide_activitees" data-aos="fade-up" data-aos-delay="300">
+                        <!-- <div class="box_Activite">
                             <div class="box_left">
                                 <div class="box_title">Dev Formateur</div>
                                 <div>lead competance</div>
@@ -164,7 +167,7 @@
                                     <img src="assets/public/images/avatars/man-5583034_1920.png" alt="" srcset="">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="box_Activite">
                             <div class="box_left">
                                 <div class="box_title">Web developpeur</div>
@@ -188,13 +191,13 @@
                 </div>
             </div>
             <div class="sous-section">
-                <div class="sous-section-title">A-Propos</div>
+                <div class="sous-section-title" data-aos="fade-right">A-Propos</div>
                 <div class="a-propos">
-                    <div class="ct_img">
+                    <div class="ct_img" data-aos="fade-right">
                         <img src="assets/public/images/preview1.jpg" alt="photo de foko guy michel" srcset="">
                     </div>
                     <div class="ct_text">
-                        <div class="text">
+                        <div class="text" data-aos="fade-left" data-aos-delay="300">
                             Développeur full-stack et designer qui se consacre à la qualité et à l'innovation.
                             J'ai une solide expérience en PHP, JavaScript, HTML, CSS, ainsi
                             qu'en bases de données et outils de design. Cela me permet de créer des sites web et des
@@ -202,30 +205,30 @@
                             esthétiquement plaisants. je suis toujours ravi de relever de nouveaux défis.
                         </div>
                         <div class="datas">
-                            <div class="data">
+                            <div class="data" data-aos="fade-up" data-aos-delay="500">
                                 <div class="data_value">04+</div>
                                 <div>
                                     Années d'experience
                                 </div>
                             </div>
-                            <div class="data">
+                            <div class="data" data-aos="fade-up" data-aos-delay="700">
                                 <div class="data_value">14+</div>
                                 <div>
                                     Projets Terminés
                                 </div>
                             </div>
-                            <div class="data">
-                                <div class="data_value">03+</div>
+                            <div class="data" data-aos="fade-up" data-aos-delay="900">
+                                <div class="data_value">02+</div>
                                 <div>
-                                    Entreprises travalées
+                                    Années d'experiance en entraprise
                                 </div>
                             </div>
                         </div>
-                        <div class="ct_cv">
-                            <div class="btn_cv">
+                        <div class="ct_cv" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="2000">
+                            <a class="btn_cv" href="assets/public/documents/CVFoko.pdf" download>
                                 Download CV
                                 <i class="bx bxs-download"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -234,8 +237,8 @@
         </section>
 
         <!-- ---------------- works ---------------- -->
-        <section class="works">
-            <div class="section-title">
+        <section class="works" id="Work">
+            <div class="section-title" data-aos="fade-up">
                 Mes Travaux: Section <span class="color_title">Portfolio</span>
                 <div class="detail">
                     Quelques projets récents.
@@ -244,8 +247,8 @@
         </section>
 
         <!-- ---------------- skills ---------------- -->
-        <section class="skills">
-            <div class="section-title">
+        <section class="skills" id="Skills">
+            <div class="section-title" data-aos="fade-up">
                 <span class="color_title">Skills</span> & <span class="color_title">experiences</span>
                 <div class="detail">
                     Quelques compétences que je peux apporter à votre projet.
@@ -254,10 +257,10 @@
         </section>
 
         <!-- ---------------- contact ---------------- -->
-        <section class="contact">
-            <div class="section-title">
+        <section class="contact" id="Contact">
+            <div class="section-title" data-aos="fade-up">
                 Contactez moi
-                <div class="detail">
+                <div class="detail" data-aos="flip-right" data-aos-delay="100">
                     <div class="color_title">
                         Vous êtes prêt à démarrer votre projet ? Discutons-en !
                     </div>
@@ -268,15 +271,15 @@
             </div>
 
             <div class="boxs_contact">
-                <div class="ct_contact">
+                <div class="ct_contact" data-aos="fade-up" data-aos-delay="300">
                     <i class="bx bxs-phone-call"></i>
                     <span>guymichelfoko@gmail.com</span>
                 </div>
-                <div class="ct_contact phone">
+                <div class="ct_contact phone" data-aos="fade-up" data-aos-delay="600">
                     <i class="bx bx-mail-send"></i>
                     <span>+237 658 103 322</span>
                 </div>
-                <div class="ct_contact whatsapp">
+                <div class="ct_contact whatsapp" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
                     <i class="bx bxl-whatsapp"></i>
                     <span>Whatsapp</span>
                 </div>
@@ -692,6 +695,10 @@
     </div>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="./assets/public/js/bundler.js"></script>
 
 </html>

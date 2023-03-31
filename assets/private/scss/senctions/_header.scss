@@ -2,16 +2,22 @@
     display: flex;
     height: 100vh;
     flex-direction: column;
+    position: relative;
+    padding-top: 60px;
 }
 
 .nav {
     height: 60px;
     background-color: var(--nav-bg);
     display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     padding-inline: 8%;
-    z-index: 3;
+    z-index: 10;
+    backdrop-filter: blur(16px);
 
     .open_menu {
         width: 36px;

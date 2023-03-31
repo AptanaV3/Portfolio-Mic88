@@ -11,7 +11,7 @@
     font-size: 32px;
     line-height: 40px;
     text-align: center;
-    margin: 80px 0;
+    margin: 100px 0;
     font-weight: 600;
     color: var(--title-text-color);
 
@@ -77,6 +77,13 @@
     }
 }
 
+// --- competances Media
+@media #{$tablet-down} {
+    .competances {
+        gap: 16vw;
+    }
+}
+
 // -------- Activitées --------
 .activitees {
     display: flex;
@@ -95,8 +102,9 @@
         .box_Activite {
             display: flex;
             justify-content: space-between;
-            width: 35vw;
-            height: 280px;
+            //width: clamp(300px, 80vw, 600px);
+            height: 290px;
+            aspect-ratio: 1.8;
             background: linear-gradient(120deg, #1d1338e1 0%, #151034ef 120%);
             border-radius: 15px;
             overflow: hidden;
@@ -274,6 +282,7 @@
             .data {
                 display: flex;
                 flex-direction: column;
+                max-width: 160px;
 
                 .data_value {
                     font-size: 22px;
@@ -314,6 +323,29 @@
                         animation: slide .8s ease infinite 1.8s;
                     }
                 }
+            }
+        }
+    }
+}
+
+// --- About Media
+@media #{$pc-down} {
+    .a-propos {
+        flex-direction: column;
+
+        .ct_img {
+            margin: 10px 50px;
+            min-width: clamp(280px, 50vw, 550px);
+        }
+
+        .datas {
+            margin-top: 40px;
+        }
+
+        .ct_text {
+            .ct_cv {
+                justify-content: center;
+                margin-top: 40px;
             }
         }
     }

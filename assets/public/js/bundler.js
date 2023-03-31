@@ -3,6 +3,11 @@ function showMenu() {
     nav.classList.toggle("show-menu");
 }
 
+function closeMenu() {
+    let nav = document.getElementById('navbar');
+    nav.classList.remove("show-menu");
+}
+
 function theme() {
 
     let body = document.getElementById('body');
