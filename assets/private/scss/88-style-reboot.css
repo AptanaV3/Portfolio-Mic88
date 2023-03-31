@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *     ,
+ * 116 |     $secondary: $light-gray;
+ *     |                 ^^^^^^^^^^^
+ *     '
+ *   partials\_variable.scss 116:17  @import
+ *   88-style-reboot.scss 1:9        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 116 \2502      $secondary: $light-gray;\d\a     \2502                  ^^^^^^^^^^^\a     \2575 \a   partials\\_variable.scss 116:17  @import\a   88-style-reboot.scss 1:9        root stylesheet";
+}

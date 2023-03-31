@@ -1,0 +1,40 @@
+@import "partials/variable";
+@import "partials/keyframes";
+@import "partials/functions";
+@import "partials/font";
+@import "partials/mixins";
+@import "partials/reset.scss";
+@import "partials/quik_media";
+@import "partials/reboot";
+
+@import "senctions/header.scss";
+@import "senctions/about";
+@import "senctions/works";
+@import "senctions/skills";
+@import "senctions/contact";
+@import "senctions/footer";
+
+.dark-mode {
+    $secondary: $light-gray;
+    --nav-bg: #0000;
+    --background: #1d1c2c;
+    --text-color: #E6E9ED;
+    --title-text-color: #E6E9ED;
+    --dark-text: #e1e4e7;
+    --text-color-p_dark: #ae9af1;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+// remplacer import par use et forward
+// code pour les scroll bar personnaliser
+// rechercher la fonction clamp()

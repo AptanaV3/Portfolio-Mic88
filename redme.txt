@@ -1,0 +1,7 @@
+Mon Portfolio: V0.0.1
+
+objectif de verssion:
+- mettre en place les outils de developement et la scruture de base du projet.
+- geré les meta donné 
+- pussher le projet sur github.
+- mettre le projet en ligne depuis github.

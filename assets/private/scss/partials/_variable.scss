@@ -1,0 +1,123 @@
+//classique syntaxe: proerty: $namevariable;
+//conver value to text: "cette variable a pour valeur #{$namevariable}"
+//autre cas: ".class-name #{$classname2}"
+
+// Fonts
+$font-family-muli: 'Muli',
+    sans-serif;
+$font-family-montserrat: 'Montserrat',
+    sans-serif;
+$font-family-poppins: 'Poppins',
+    sans-serif;
+$font-family-roboto: 'Roboto',
+    sans-serif;
+$font-family-nunito: 'nunito',
+    sans-serif;
+
+//base de police sur l'appli
+$root-font-size: 16px !default;
+
+$font-size-base: .9375rem;
+$font-size-lg: 1.125rem;
+$font-size-sm: .875rem;
+
+$nav-bg: #1d1c2c;
+
+$primary: #6c42f3;
+$secondary: #002060;
+
+
+$light-gray: #E6E9ED;
+$medium-gray: #c2c2c2;
+$gray: #868686;
+$dark-gray: #7e7e7e;
+
+$bg_email: #ffa07a99;
+$bg_tel: #6a4cff99;
+$bg_whastapp: #46ba7d99;
+
+
+
+
+
+
+
+// Borders
+$border-width: 1px;
+$border-color: rgba(0, 40, 100, .12);
+$border-color-dark: rgba(0, 40, 100, .24);
+
+// Border Radius
+// a modifier avec des fonction de conversion
+$border-radius-extra-small: 0.125rem !default;
+$border-radius-small: 0.1875rem !default;
+$border-radius-large: 0.550rem !default;
+$border-radius-extreme: 0.875rem !default;
+
+// Z-index
+$zindex-low: -1;
+$zindex-dropdown: 10;
+$zindex-tooltip: 100;
+$zindex-modal: 1000;
+
+// Breakpoints
+//- Phone
+$break-smal-phone: 320px !default;
+$break-phone: 370px !default;
+$break-big-phone: 480px !default;
+
+//- Tablet
+$break-small-tablet: 640px !default;
+$break-tablet: 768px !default;
+$break-big-tablet: 992px !default;
+
+//- Pc
+$break-small-pc: 1024px !default;
+$break-pc: 1280px !default;
+$break-big-pc: 1440px !default;
+$break-ultra-pc: 1920px !default;
+
+// Media screnn
+//- Phone
+// up
+$smal-phone-up: "only screen and (min-width: #{$break-smal-phone})";
+$phone-up: "only screen and (min-width: #{$break-phone})";
+$big-phone-up: "only screen and (min-width: #{$break-big-phone})";
+
+// down
+$smal-phone-down: "only screen and (max-width: #{$break-smal-phone})";
+$phone-down: "only screen and (max-width: #{$break-phone})";
+$big-phone-down: "only screen and (max-width: #{$break-big-phone})";
+
+//- Tablet
+// up
+$smal-tablet-up: "only screen and (min-width: #{$break-small-tablet})";
+$tablet-up: "only screen and (min-width: #{$break-tablet})";
+$big-tablet-up: "only screen and (min-width: #{$break-big-tablet})";
+
+// down
+$smal-tablet-down: "only screen and (max-width: #{$break-small-tablet})";
+$tablet-down: "only screen and (max-width: #{$break-tablet})";
+$big-tablet-down: "only screen and (max-width: #{$break-big-tablet})";
+
+//- PC
+// up
+$smal-pc-up: "only screen and (min-width: #{$break-small-pc})";
+$pc-up: "only screen and (min-width: #{$break-pc})";
+$big-pc-up: "onlys creen and (min-width: #{$break-big-pc})";
+$ultra-pc-up: "only screen and (min-width: #{$break-ultra-pc})";
+
+// down
+$smal-pc-down: "only screen and (max-width: #{$break-small-pc})";
+$pc-down: "only screen and (max-width: #{$break-pc})";
+$big-pc-down: "only screen and (max-width: #{$break-big-pc})";
+$ultra-pc-down: "only screen and (max-width: #{$break-ultra-pc})";
+
+:root {
+    --nav-bg: rgba(180, 180, 180, 0.2);
+    --background: #fdfdfd;
+    --text-color: #868686;
+    --text-color-p_dark: #002060;
+    --dark-text: #454545;
+    --title-text-color: #002060;
+}

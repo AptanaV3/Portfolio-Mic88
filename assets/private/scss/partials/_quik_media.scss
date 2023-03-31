@@ -1,0 +1,41 @@
+// changer le positionement flex en fonction de la taille de l'ecrant.
+// affichager d'un element a partir d'une taille d'ecran (tablete, pc)
+//Ex:
+
+
+@media #{$smal-tablet-down} {
+    .smal-tablet-up {
+        display: none;
+    }
+}
+
+@media #{$tablet-down} {
+    .tablet-up {
+        display: none;
+    }
+}
+
+@media #{$big-tablet-down} {
+    .big-tablet-up {
+        display: none;
+    }
+}
+
+@media #{$smal-tablet-up} {
+    .smal-tablet-down {
+        display: none;
+    }
+}
+
+@media #{$tablet-up} {
+    .tablet-down {
+        display: none;
+    }
+}
+
+@media #{$big-tablet-up} {
+    .big-tablet-down {
+        display: none;
+    }
+}
+// disparution d'un element a partir d'une taille d'ecran (tablete, pc)

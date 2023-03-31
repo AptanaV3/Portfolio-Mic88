@@ -1,0 +1,59 @@
+//syntaxe: @include name
+//avec parametre: @include name(value); @include name(paranName:value, paranName:value);
+
+// --------- Box shadow ---------
+
+@mixin box-shadow($box-shadow) {
+    -moz-box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+// --------- Transform ---------
+@mixin transform($prop) {
+    transform: $prop;
+}
+
+//rotate
+@mixin rotate($val) {
+    @include transform(rotate($val))
+}
+
+//scale
+@mixin scale($val) {
+    @include transform(scale($val))
+}
+
+//translate
+@mixin translate($val) {
+    @include transform(translate($val))
+}
+
+// --------- toltip triangle ---------
+@mixin toltip-triangle($couler: #fff, $taille: 10px) {
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: $taille * -1;
+        left: calc(50% - #{$taille});
+        border-top: $size solid $color;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+    }
+}
+
+
+
+// --------- opacity  ---------
+@mixin opacity($opacity) {
+    opacity: $opacity;
+}
+
+// mixins for mobile responsiveness
+@mixin screen($res-min: 320px, $res-max: 1920px) {
+    @media screen and (min-width: $res-min ) and (max-width: $res-max ) {
+        @content;
+    }
+}

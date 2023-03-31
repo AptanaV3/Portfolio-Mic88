@@ -1,0 +1,88 @@
+:root {
+    font-size: $root-font-size;
+}
+
+html {
+    font-size: $root-font-size;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: .88rem;
+    user-select: none; //doc
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: .87rem;
+}
+
+h4 {
+    font-size: .8rem;
+}
+
+h5 {
+    font-size: .77rem;
+}
+
+small {
+    font-size: .75rem;
+}
+
+table {
+    border-collapse: collapse; //fusion de bordures des cellules
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 0;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+p {
+    line-height: 25px;
+}
+
+//Alpine js 
+/*
+[x-cloak] {
+    display: none !important;
+}
+*/

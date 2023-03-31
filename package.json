@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config ./webpack.config.js --mode developement",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mic88",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

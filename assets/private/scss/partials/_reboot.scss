@@ -1,0 +1,72 @@
+// --------- Utiles ---------
+
+// classe virtuelle n'est utilisable que par heritage
+//syntaxe: @extend %filter-split
+%filter-split {
+    //image en noir sur blanc 
+    transform: scaleX(-1);
+}
+
+.text_ellipsis {
+    //trois point de suspension pour un text trop long
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.ct-profile-photo {
+    position: relative;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.navbar {
+    height: 4.2rem;
+    position: relative;
+    display: flex;
+    padding-inline: 2vw;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.noir-blanc {
+    //image en noir sur blanc
+    filter: grayscale(100%);
+}
+
+.indent-paragrap {
+    //espacement aux debut des paragraphe ou du text en general
+    text-indent: 5%;
+}
+
+.vertical-writing {
+    //sens d'ecriture verticale
+    writing-mode: vertical-lr;
+}
+
+//text qui sert de masque pour le background d'un composant (degradé, images..)
+.text-mask {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// classes permetant de definir le nombre max de ligne de text dans un composant
+// different taille espacements entre le elements (gap)
+
+
