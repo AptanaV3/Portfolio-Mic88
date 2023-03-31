@@ -20,6 +20,13 @@
     }
 }
 
+@media #{$tablet-down} {
+    .section-title {
+        font-size: 24px;
+        margin: 60px 0;
+    }
+}
+
 .sous-section {
     width: 100%;
     display: flex;
