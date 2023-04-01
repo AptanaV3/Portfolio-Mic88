@@ -25,3 +25,15 @@ function theme() {
         theme_drop.classList.add("dark");
     }
 }
+
+function mouseo(e) {
+    let el = document.getElementById(e);
+    let cursor = document.getElementById("cursor");
+
+    cursor.style.left = parseInt(el.getBoundingClientRect().x) + "px";
+
+    //cursor.style.transform = "translateX(" + parseInt(el.getBoundingClientRect().x - cursor.getBoundingClientRect().x * 1) + "px)";
+
+
+    //alert(el.getBoundingClientRect().x);
+}
