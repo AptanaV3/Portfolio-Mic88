@@ -63,12 +63,13 @@ footer {
                 pointer-events: none;
                 mix-blend-mode: difference;
                 z-index: 9;
-                transition: transform .5s;
+                transition: all .1s;
                 transform: translate(-50%, -50%) scale(.7);
             }
 
             &:hover {
                 &::after {
+                    transition: all .1s;
                     background: var(--background);
                     transform: translate(-50%, -50%) scale(.8);
                     animation: animateBlob 3s infinite linear;
